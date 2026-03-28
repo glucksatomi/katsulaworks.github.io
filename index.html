@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>桂舎 · Katsula Works</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Zen+Kaku+Gothic+New:wght@300;400&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Zen Kaku Gothic New',sans-serif;background:#faf9f7;color:#2c2c2a}
+.page{max-width:920px;margin:0 auto}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:1.75rem 2.5rem;border-bottom:0.5px solid #d3d1c7}
+.nav-left{display:flex;align-items:center;gap:0.75rem}
+.nav-mark svg{width:36px;height:36px}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:14px;letter-spacing:0.2em;color:#2c2c2a;line-height:1.4}
+.nav-logo span{display:block;font-size:10px;letter-spacing:0.3em;color:#888}
+.nav-links{display:flex;gap:2rem}
+.nav-links a{font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:#888;text-decoration:none}
+.nav-links a:hover{color:#2c2c2a}
+.lang{font-size:11px;color:#888}
+.hero{padding:5rem 2.5rem 4rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;border-bottom:0.5px solid #d3d1c7}
+.hero-tag{font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color:#888;margin-bottom:1.5rem}
+.hero-title{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:52px;line-height:1.05;color:#2c2c2a;margin-bottom:1.25rem}
+.hero-title em{font-style:italic}
+.hero-desc{font-size:13px;line-height:2;color:#888;margin-bottom:2.5rem;max-width:340px}
+.hero-cta{font-family:'Cormorant Garamond',serif;font-size:13px;letter-spacing:0.2em;text-transform:uppercase;color:#2c2c2a;text-decoration:none;border-bottom:0.5px solid #2c2c2a;padding-bottom:2px}
+.hero-right{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#d3d1c7}
+.hero-img{background:#f1efe8;aspect-ratio:1;display:flex;align-items:center;justify-content:center}
+.hero-img span{font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:#888}
+.hero-img.tall{grid-row:span 2;aspect-ratio:unset}
+.sections{display:grid;grid-template-columns:1fr 1fr}
+.section-panel{padding:3.5rem 2.5rem;border-right:0.5px solid #d3d1c7;border-bottom:0.5px solid #d3d1c7;cursor:pointer;transition:background 0.2s}
+.section-panel:last-child{border-right:none}
+.section-panel:hover{background:#f1efe8}
+.panel-num{font-size:10px;letter-spacing:0.3em;color:#888;margin-bottom:1.5rem}
+.panel-icon{margin-bottom:1.5rem}
+.panel-title{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:30px;font-weight:300;color:#2c2c2a;margin-bottom:1.5rem;line-height:1.1}
+.panel-motto{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:#2c2c2a;margin-bottom:1rem;line-height:1.6}
+.panel-desc{font-size:13px;line-height:1.9;color:#888}
+.panel-link{margin-top:2rem;font-family:'Cormorant Garamond',serif;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:#2c2c2a}
+.season-bar{padding:2rem 2.5rem;border-bottom:0.5px solid #d3d1c7;display:flex;align-items:center;justify-content:space-between}
+.season-label{font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color:#888;margin-bottom:0.2rem}
+.season-title{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;color:#2c2c2a}
+.season-link{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#888;text-decoration:none;border-bottom:0.5px solid #b4b2a9;padding-bottom:1px}
+.preview-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#d3d1c7}
+.preview-cell{background:#faf9f7}
+.preview-img{background:#f1efe8;aspect-ratio:1;display:flex;align-items:center;justify-content:center}
+.preview-img span{font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#888}
+.preview-info{padding:0.6rem 0.75rem 0.75rem}
+.preview-name{font-size:11px;color:#2c2c2a}
+.preview-type{font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#888;margin-top:2px}
+.footer{padding:2rem 2.5rem;border-top:0.5px solid #d3d1c7;display:flex;justify-content:space-between;align-items:center}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:12px;letter-spacing:0.2em;color:#888}
+.footer-copy{font-size:10px;color:#888}
+</style>
+</head><body>
+<div class="page">
+  <nav class="nav">
+    <div class="nav-left">
+      <div class="nav-mark">
+        <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+          <line x1="30" y1="2" x2="30" y2="58" stroke="currentColor" stroke-width="0.8"/>
+          <line x1="2" y1="30" x2="58" y2="30" stroke="currentColor" stroke-width="0.8"/>
+          <line x1="30" y1="30" x2="18" y2="48" stroke="currentColor" stroke-width="0.8"/>
+          <line x1="30" y1="30" x2="42" y2="48" stroke="currentColor" stroke-width="0.8"/>
+          <line x1="16" y1="38" x2="44" y2="38" stroke="currentColor" stroke-width="0.8"/>
+          <line x1="20" y1="44" x2="40" y2="44" stroke="currentColor" stroke-width="0.8"/>
+          <rect x="22" y="50" width="16" height="8" fill="none" stroke="currentColor" stroke-width="0.8"/>
+        </svg>
+      </div>
+      <div class="nav-logo">桂舎<span>KATSULA WORKS</span></div>
+    </div>
+    <div class="nav-links">
+      <a href="#">Gallery</a>
+      <a href="#">Wine</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="lang"><span style="color:#2c2c2a">EN</span> · <span>日本語</span></div>
+  </nav>
+
+  <div class="hero">
+    <div>
+      <div class="hero-tag">Tokyo · Japan</div>
+      <h1 class="hero-title">Japanese<br>Mingei<br><em>& Wine.</em></h1>
+      <p class="hero-desc">Folk craft textiles and wine worth caring about — chosen with no agenda other than quality. Sake, champagne, burgundy, natural wine — all welcome.</p>
+      <a href="#" class="hero-cta">Explore →</a>
+    </div>
+    <div class="hero-right">
+      <div class="hero-img tall"><span>Gallery</span></div>
+      <div class="hero-img"><span>Textile</span></div>
+      <div class="hero-img"><span>Wine</span></div>
+    </div>
+  </div>
+
+  <div class="sections">
+    <div class="section-panel">
+      <div class="panel-num">01</div>
+      <div class="panel-icon">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <rect x="4" y="4" width="10" height="14" stroke="currentColor" stroke-width="0.8"/>
+          <rect x="18" y="4" width="10" height="10" stroke="currentColor" stroke-width="0.8"/>
+          <rect x="18" y="18" width="10" height="10" stroke="currentColor" stroke-width="0.8"/>
+          <rect x="4" y="22" width="10" height="6" stroke="currentColor" stroke-width="0.8"/>
+        </svg>
+      </div>
+      <div class="panel-title">Mingei Gallery</div>
+      <p class="panel-desc">Seasonal exhibitions of Japanese folk craft — textiles, dyeing, and pattern design. Currently featuring the work of Kumiko Nishikata.<br><br>日本の民藝作家の作品を、季節ごとの企画展としてご紹介します。</p>
+      <div class="panel-link">View current exhibition →</div>
+    </div>
+    <div class="section-panel">
+      <div class="panel-num">02</div>
+      <div class="panel-icon">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <line x1="16" y1="2" x2="16" y2="8" stroke="currentColor" stroke-width="0.8"/>
+          <path d="M11 8 Q8 12 8 18 L8 28 L24 28 L24 18 Q24 12 21 8 Z" stroke="currentColor" stroke-width="0.8" fill="none"/>
+          <line x1="8" y1="22" x2="24" y2="22" stroke="currentColor" stroke-width="0.8"/>
+        </svg>
+      </div>
+      <div class="panel-title">Selected Wine</div>
+      <div class="panel-motto">"Not where it's from.<br>Just whether it's good."</div>
+      <p class="panel-desc">Sake, champagne, burgundy, natural wine — we use "wine" the way it's always been used. A word for something good to drink, wherever it comes from.<br><br>産地よりも、おいしいかどうか。国やジャンルにこだわらず、本当においしいと思ったものだけを。</p>
+      <div class="panel-link">Discover our picks →</div>
+    </div>
+  </div>
+
+  <div class="season-bar">
+    <div>
+      <div class="season-label">Now showing</div>
+      <div class="season-title">2026 Spring — 西片玖美子 · Kumiko Nishikata</div>
+    </div>
+    <a href="#" class="season-link">View exhibition →</a>
+  </div>
+
+  <div class="preview-grid">
+    <div class="preview-cell">
+      <div class="preview-img"><span>Bingata</span></div>
+      <div class="preview-info"><div class="preview-name">桜蜻蛉月見草流水</div><div class="preview-type">反物 · Textile</div></div>
+    </div>
+    <div class="preview-cell">
+      <div class="preview-img"><span>Obi</span></div>
+      <div class="preview-info"><div class="preview-name">つばめ</div><div class="preview-type">帯 · Obi</div></div>
+    </div>
+    <div class="preview-cell">
+      <div class="preview-img"><span>Katagami</span></div>
+      <div class="preview-info"><div class="preview-name">松 枝垂桜 燕</div><div class="preview-type">型紙 · Katagami</div></div>
+    </div>
+    <div class="preview-cell">
+      <div class="preview-img"><span>Obi</span></div>
+      <div class="preview-info"><div class="preview-name">蓮の花</div><div class="preview-type">帯 · Obi</div></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-logo">桂舎 · KATSULA WORKS</div>
+    <div class="footer-copy">© 2026 Katsula Works · All rights reserved</div>
+  </div>
+</div>
+</body></html>

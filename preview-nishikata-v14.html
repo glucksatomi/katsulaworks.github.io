@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Kumiko Nishikata — The Poetics of Pattern | KATSULA WORKS</title><style>*{box-sizing:border-box}body{margin:0;background:#fff;color:#292929;font-family:system-ui,"Noto Sans JP",sans-serif;font-weight:300}header{padding:28px 5vw;border-bottom:1px solid #eee;display:flex;justify-content:space-between;align-items:center}header strong{font-size:20px;font-weight:400;letter-spacing:.14em}button{background:none;border:1px solid #bbb;padding:7px 13px;cursor:pointer}button.active{background:#222;color:#fff}main{max-width:1250px;margin:auto;padding:68px 5vw}h1{font:normal clamp(32px,5vw,60px)/1.3 Georgia,serif;margin:12px 0}p.sub{color:#777;margin-bottom:55px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:55px 28px}.art{aspect-ratio:4/5;background:#f8f7f5;display:flex;align-items:center;justify-content:center;padding:15px}.art img{max-width:100%;max-height:100%;object-fit:contain;user-select:none;-webkit-user-drag:none}.num{font-size:11px;color:#999;margin-top:14px}.name{font-size:15px;margin:6px 0}.id{font-size:11px;color:#999}.en{display:none}body.english .en{display:block}body.english .ja{display:none}footer{border-top:1px solid #eee;color:#888;font-size:11px;padding:28px 5vw}@media(max-width:750px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:35px 14px}main{padding:45px 5vw}.art{padding:6px}.name{font-size:13px}}.art:has(img[src^="images/05_"]),.art:has(img[src^="images/11_"]){background:#fff;padding:4px}.art:has(img[src^="images/05_"]) img,.art:has(img[src^="images/11_"]) img{max-height:100%;max-width:100%}
+.grid article{cursor:pointer;outline-offset:5px}.grid article:focus-visible{outline:1px solid #333}.grid article:hover .art img{transform:scale(1.015)}.grid .art img{transition:transform .2s}
+.detail[hidden]{display:none!important}.detail{position:fixed;inset:0;background:#fff;z-index:100;overflow-y:auto}.detail-top{position:sticky;top:0;background:rgba(255,255,255,.97);border-bottom:1px solid #eee;padding:17px 5vw;display:flex;align-items:center;justify-content:space-between;gap:15px;z-index:2}.detail-top button,.detail-nav button{background:none;border:0;color:#333;cursor:pointer;font:inherit}.detail-back{font-size:12px;letter-spacing:.04em}.detail-close{font-size:25px;line-height:1}.detail-inner{max-width:1320px;margin:auto;padding:42px 5vw 80px;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(240px,.65fr);gap:6vw;align-items:start}.detail-image{background:#faf9f7;min-height:460px;display:flex;align-items:center;justify-content:center;padding:22px}.detail-image img{display:block;max-width:100%;max-height:75vh;object-fit:contain;user-select:none;-webkit-user-drag:none}.detail-info{padding-top:15px}.detail-kicker{font-size:11px;color:#888;letter-spacing:.15em}.detail-info h2{font-size:clamp(22px,2.5vw,35px);font-weight:400;line-height:1.55;margin:25px 0 8px}.detail-id{font-size:12px;color:#888;letter-spacing:.08em}.detail-rule{border-top:1px solid #ddd;margin:32px 0}.detail-description{font-size:13px;line-height:2;color:#777}.detail-nav{display:flex;justify-content:space-between;gap:16px;margin-top:55px;border-top:1px solid #eee;padding-top:22px}.detail-nav button{font-size:12px;padding:10px 0}.detail-nav button:disabled{opacity:.25;cursor:default}.detail .en{display:none}body.english .detail .en{display:block}body.english .detail .ja{display:none}@media(max-width:760px){.detail-inner{display:block;padding:24px 5vw 65px}.detail-image{min-height:0;padding:12px}.detail-image img{max-height:57vh}.detail-info{padding-top:28px}.detail-nav{margin-top:32px}}
+
+/* Detail artwork titles remain bilingual in both language modes */
+.detail-info h2 #detailNameJa,.detail-info h2 #detailNameEn{display:block!important}
+.detail-info h2 #detailNameEn{font-family:Georgia,serif;font-size:.65em;color:#777;font-weight:400;margin-top:5px;line-height:1.5}
+</style><style>
+.detail-description .catalogue-info h3{font-size:12px;font-weight:500;letter-spacing:.13em;margin:0 0 17px}
+.detail-description dl{display:grid;grid-template-columns:100px 1fr;gap:10px 14px;margin:0}
+.detail-description dt{color:#888;font-size:12px}
+.detail-description dd{margin:0;font-size:13px;line-height:1.8;white-space:pre-line}
+.catalogue-note{margin-top:26px;color:#999;font-size:11px;line-height:1.8}
+@media(max-width:640px){.detail-description dl{grid-template-columns:80px 1fr;gap:9px}}
+</style><style>
+.site-nav{display:flex;align-items:center;gap:22px}.site-nav a{color:#555;text-decoration:none;font-size:12px}.site-nav a:hover{text-decoration:underline}
+.editorial{max-width:880px;margin:95px auto 0;padding:0 0 65px;border-top:1px solid #e8e6e3;padding-top:54px}
+.editorial h2{font:normal clamp(23px,3vw,35px)/1.5 Georgia,serif;margin:10px 0 28px}
+.editorial h3{font-weight:400;font-size:18px;margin:28px 0 15px}
+.editorial p{font-size:14px;line-height:2.1;margin:0 0 18px;white-space:pre-line}
+.editorial .eyebrow{font-size:11px;letter-spacing:.17em;color:#999}
+.editorial .credit{font-size:12px;color:#777;margin-top:22px}
+.site-intro{max-width:880px;margin:0 auto 62px}
+.site-intro p{font-size:14px;line-height:2;color:#555}
+.site-intro .anniversary{font-size:11px;letter-spacing:.1em;color:#888}
+@media(max-width:760px){.site-nav{gap:10px}.site-nav a{font-size:10px}.editorial{margin-top:60px;padding-top:40px}}
+</style><style>.site-anniversary{text-align:center;margin:24px auto 34px}.site-anniversary p{font-size:11px;letter-spacing:.1em;color:#777}.site-intro{margin-top:24px}</style><style>
+.restored-hero{padding:0 0 62px!important;margin:0!important;display:block!important}
+.restored-hero-art{margin:0!important;width:100%;background:#f8f7f5;display:flex;align-items:center;justify-content:center;min-height:64vh}
+.restored-hero-art img{display:block;width:100%;height:auto;max-height:89vh;object-fit:contain;object-position:center}
+.restored-hero-heading{max-width:1300px;margin:0 auto;padding:32px 5vw 0}
+.restored-hero-heading h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(38px,6vw,86px);font-weight:400;line-height:1.12;margin:8px 0 18px}
+.restored-hero-heading small{letter-spacing:.17em;color:#777}
+.restored-hero-heading .site-anniversary{margin-top:15px}
+.restored-bio-layout{display:grid;grid-template-columns:minmax(160px,280px) minmax(0,1fr);gap:48px;align-items:start}
+.restored-portrait{margin:0}
+.restored-portrait img{display:block;width:100%;height:auto;object-fit:contain}
+.restored-logo{max-width:155px;width:100%;height:auto;object-fit:contain;margin-right:12px}
+@media(max-width:720px){.restored-hero-art{min-height:0}.restored-hero-art img{max-height:72vh}.restored-hero-heading{padding:24px 6vw 0}.restored-bio-layout{grid-template-columns:1fr;gap:24px}.restored-portrait{max-width:260px}}
+</style><style>
+/* Restored approved hierarchy: identity in header, large artwork, series title primary */
+header{display:flex!important;justify-content:space-between!important;align-items:center!important;gap:24px!important}
+header>strong{display:flex!important;align-items:center!important;flex:0 0 auto!important}
+.header-official-logo{display:block!important;width:158px!important;max-width:34vw!important;height:auto!important;object-fit:contain!important}
+header nav img{display:none!important}
+.restored-hero{padding-top:0!important}
+.restored-hero-heading{padding-top:38px!important;padding-bottom:22px!important}
+.series-kicker{font-size:11px;letter-spacing:.21em;color:#777;margin-bottom:14px}
+.restored-hero-heading .series-main-title{font-family:Didot,Georgia,'Times New Roman',serif!important;font-size:clamp(46px,7vw,108px)!important;letter-spacing:-.018em!important;font-weight:400!important;line-height:1.08!important;margin:0 0 15px!important;max-width:1100px!important}
+.series-main-japanese{font-family:'Noto Serif JP',serif;font-size:clamp(21px,2.5vw,34px);letter-spacing:.1em;margin:0 0 20px}
+.series-anniversary{font-size:12px;letter-spacing:.08em;color:#777;margin-bottom:25px}
+.series-exhibition{border-top:1px solid #e7e4e1;padding-top:20px;font-size:11px;letter-spacing:.21em;color:#777}
+.series-exhibition-sub{font-size:13px;color:#777;margin:4px 0 0}
+@media(max-width:720px){.header-official-logo{width:115px!important}.restored-hero-heading .series-main-title{font-size:clamp(37px,10vw,60px)!important}.restored-hero-heading{padding-top:25px!important}}
+</style><style>
+.expandable-more[hidden]{display:none!important}
+.expandable-toggle{display:inline-block;background:transparent;border:0;border-bottom:1px solid #7e8996;color:#54677c;padding:7px 0;margin:10px 0 12px;cursor:pointer;font:inherit;font-size:13px;letter-spacing:.035em}
+.expandable-toggle:hover{color:#253e58}
+</style><style>
+/* Tighter rhythm for collapsed editorial sections */
+.restored-hero{padding-bottom:10px!important}
+.restored-hero-heading{padding-bottom:6px!important}
+.series-anniversary{margin-bottom:12px!important}
+.series-exhibition{padding-top:14px!important}
+.series-exhibition-sub{margin-bottom:0!important}
+.editorial{margin-top:34px!important;padding-top:30px!important;padding-bottom:32px!important}
+.editorial h2{margin-bottom:20px!important}
+.editorial p{margin-bottom:12px!important}
+.expandable-toggle{margin:5px 0 0!important}
+@media(max-width:760px){.editorial{margin-top:24px!important;padding-top:24px!important;padding-bottom:26px!important}.restored-hero{padding-bottom:4px!important}}
+</style><style>
+    /* Copyright labels sit in their own margin, outside the photographs. */
+    .grid .art{position:relative;flex-direction:column;padding-bottom:30px!important}
+    .grid .art img{max-height:calc(100% - 12px)!important}
+    .art-copyright{position:absolute;bottom:7px;right:11px;font-size:10px;letter-spacing:.035em;color:#777;line-height:1.2;pointer-events:none}
+    .detail-image{flex-direction:column!important;gap:10px!important}
+    .detail-image img{max-height:70vh!important}
+    .detail-copyright{align-self:flex-end;color:#777;font-size:11px;line-height:1.3}
+    .restored-hero-art{position:relative;flex-direction:column!important;padding-bottom:18px}
+    .hero-copyright{align-self:flex-end;margin:5px 2vw 0;color:#777;font-size:11px}
+    </style><style>
+    /* Butterfly emblem accompanies copyright, outside the artwork. */
+    .hero-copyright,.art-copyright,.detail-copyright{display:inline-flex!important;align-items:center!important;justify-content:flex-end!important;gap:5px!important;white-space:nowrap!important}
+    .koomin-butterfly-mark{display:inline-block!important;width:22px!important;height:17px!important;max-width:none!important;max-height:none!important;object-fit:contain!important;flex:0 0 22px!important;opacity:.9!important;vertical-align:middle!important;pointer-events:none!important}
+    .art-copyright .koomin-butterfly-mark{width:19px!important;height:15px!important;flex-basis:19px!important}
+    .hero-copyright .koomin-butterfly-mark{width:24px!important;height:18px!important;flex-basis:24px!important}
+    </style><style>/* Biography: text left, portrait right. */
+.restored-bio-layout{grid-template-columns:minmax(0,1fr) minmax(180px,280px)!important;align-items:start}
+.restored-bio-copy{grid-column:1;grid-row:1;min-width:0}
+.restored-portrait{grid-column:2;grid-row:1;margin:0}
+@media(max-width:720px){.restored-bio-layout{grid-template-columns:minmax(0,1fr)!important}.restored-bio-copy{grid-column:1;grid-row:1}.restored-portrait{grid-column:1;grid-row:2;max-width:260px;margin:0 auto}}</style><style>
+.restored-portrait .portrait-copyright{display:flex;align-items:center;justify-content:flex-end;gap:5px;margin-top:8px;font-size:11px;line-height:1.4;color:#777;letter-spacing:.02em}.restored-portrait .portrait-copyright .koomin-butterfly-mark{width:22px!important;height:17px!important;flex:0 0 22px!important}
+</style><style>.stencil-supplement[hidden]{display:none!important}.stencil-supplement{grid-column:1;min-width:0;text-align:right}.stencil-supplement img{display:block;width:100%;max-height:70vh;object-fit:contain;background:#faf9f7}.stencil-supplement-label{font-size:11px;color:#777;margin:9px 0 0}@media(max-width:760px){.stencil-supplement{grid-column:auto}}</style><style>
+.katsula-info{scroll-margin-top:90px}.katsula-info p{max-width:760px;line-height:1.95}.footer-butterflies{width:23px;height:auto;vertical-align:middle;margin-left:3px;opacity:.8}#top{scroll-margin-top:70px}#archive,#contact,#katsula-about{padding-top:60px;padding-bottom:60px} @media(max-width:720px){.site-nav{flex-wrap:wrap;gap:10px}.site-nav a{font-size:10px}#archive,#contact,#katsula-about{padding-top:35px;padding-bottom:35px}}
+</style><style>
+/* Additional stencil images: original photographs without embedded watermarks */
+.stencil-supplement{margin:0 auto 32px;max-width:720px;width:100%}.stencil-photo-figure{margin:0}.stencil-photo-figure>img{display:block;width:100%;height:auto;max-height:82vh;object-fit:contain;background:#f8f7f4}.stencil-supplement-label{font-size:12px;color:#555;letter-spacing:.03em;margin-top:10px}.stencil-photo-copyright{display:flex;justify-content:flex-end;align-items:center;gap:5px;margin-top:4px;color:#777;font-size:11px}.stencil-photo-copyright img{width:22px!important;height:17px!important;object-fit:contain}#stencilSupplement[hidden]{display:none!important}
+</style><style>
+.archive-exhibition-card{display:flex;gap:22px;align-items:center;max-width:660px;margin-top:25px;padding:14px;border:1px solid rgba(80,90,100,.17);border-radius:3px;color:inherit;text-decoration:none;transition:border-color .2s,background .2s}.archive-exhibition-card:hover,.archive-exhibition-card:focus-visible{border-color:#8795a2;background:rgba(130,150,170,.045)}.archive-exhibition-card>img{width:142px;height:130px;object-fit:contain;background:#f5f3f0;flex-shrink:0}.archive-exhibition-copy{display:flex;flex-direction:column;gap:10px;min-width:0}.archive-overline{font-size:10px;letter-spacing:.12em;color:#777}.archive-exhibition-copy>.ja:not(.archive-link-label),.archive-exhibition-copy>.en:not(.archive-link-label){font-size:18px;line-height:1.5}.archive-link-label{font-size:12px;color:#64778a}.archive-exhibition-copy>.en{display:none}body.english .archive-exhibition-copy>.ja{display:none}body.english .archive-exhibition-copy>.en{display:block}@media(max-width:520px){.archive-exhibition-card{gap:13px;padding:10px}.archive-exhibition-card>img{width:104px;height:112px}.archive-exhibition-copy>.ja:not(.archive-link-label),.archive-exhibition-copy>.en:not(.archive-link-label){font-size:15px}}
+</style><style>
+.detail-slide-controls{display:flex;justify-content:center;align-items:center;gap:24px;margin:12px auto 20px;color:#555}
+.detail-slide-controls[hidden]{display:none!important}
+.detail-slide-controls button{background:transparent;border:1px solid #bcbcbc;border-radius:50%;width:38px;height:38px;cursor:pointer;font-size:27px;line-height:1;color:inherit}
+.detail-slide-controls button:disabled{opacity:.25;cursor:default}
+.detail-slide-controls #slideCount{font-size:13px;letter-spacing:.08em;min-width:42px;text-align:center}
+</style><style>
+/* Stable artwork details: the title remains in the right column with or without a slideshow. */
+.detail-inner{grid-template-columns:minmax(0,1.4fr) minmax(240px,.65fr)!important;align-items:start}
+.detail-media-column{grid-column:1;min-width:0}
+.detail-info{grid-column:2;min-width:0}
+.detail-media-column .detail-slide-controls{margin:12px auto 0}
+/* About the exhibition is the higher-level heading; First Encounters is a subsection. */
+#about>h2{font-size:clamp(27px,3.4vw,39px)!important}
+#exhibition>h2{font-size:clamp(21px,2.6vw,29px)!important}
+#exhibition{margin-top:20px!important}
+#exhibition + .site-intro{margin-top:0!important;padding-top:0!important}
+#exhibition{padding-bottom:8px!important}
+@media(max-width:760px){
+ .detail-inner{display:block!important}
+ .detail-media-column,.detail-info{width:100%}
+ .detail-info{margin-top:22px}
+}
+</style><style>
+/* Stencil-inspired warm umber accent; keep main text and original layout unchanged */
+:root{--katsula-stencil:#79564a;--katsula-stencil-hover:#5b3d34}
+#exhibition .eyebrow,#exhibition h2{color:var(--katsula-stencil)}
+#detailNext,#detailPrev{color:var(--katsula-stencil);transition:color .2s ease}
+#detailNext:hover:not(:disabled),#detailPrev:hover:not(:disabled){color:var(--katsula-stencil-hover)}
+.detail-slide-prev,.detail-slide-next,.detail-slide-arrow,.slide-arrow{color:var(--katsula-stencil)}
+</style><style>
+/* Mobile refinements: navigation, readable titles, artwork detail and touch targets */
+@media(max-width:760px){
+ header{padding:15px 5vw 12px!important;display:flex!important;flex-wrap:wrap!important;gap:12px!important;align-items:center!important}
+ header>strong{width:100%!important;justify-content:center!important}
+ .header-official-logo{width:126px!important;max-width:65vw!important}
+ header .site-nav{width:100%;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:7px 14px!important}
+ header .site-nav a{font-size:11px!important;letter-spacing:.025em;white-space:nowrap;padding:5px 0}
+ header .site-nav>div{display:flex;gap:4px;align-items:center}
+ header .site-nav button{min-width:36px;min-height:36px;padding:6px 8px}
+ .restored-hero-heading .series-main-title{overflow-wrap:anywhere;line-height:1.14!important}
+ .restored-hero-heading{padding-left:5vw!important;padding-right:5vw!important}
+ .detail-inner{display:block!important;grid-template-columns:none!important;padding:20px 5vw 60px!important}
+ .detail-media-column,.detail-info{grid-column:auto!important;width:100%!important;min-width:0}
+ .detail-image{padding:10px!important}
+ .detail-image img{max-height:56vh!important;width:auto;max-width:100%;height:auto}
+ .detail-info{margin-top:18px!important;padding-top:0!important}
+ .detail-info h2{margin-top:14px!important;overflow-wrap:anywhere}
+ .detail-slide-controls button{min-width:44px;min-height:44px;width:44px;height:44px}
+ .detail-nav button{min-height:44px}
+ .grid{gap:30px 13px}
+ .editorial p{overflow-wrap:anywhere}
+}
+@media(max-width:360px){
+ header .site-nav{gap:5px 10px!important}
+ header .site-nav a{font-size:10px!important}
+ .restored-hero-heading .series-main-title{font-size:35px!important}
+ .archive-exhibition-card>img{width:85px;height:100px}
+}
+</style><style>
+/* Refined exhibition typography: clear hierarchy and a consistent editorial rhythm */
+.restored-hero-heading{
+  padding-top:42px!important;
+  padding-bottom:16px!important;
+}
+.restored-hero-heading .series-kicker{
+  font-size:11px!important;
+  letter-spacing:.19em!important;
+  margin-bottom:14px!important;
+  color:#827b76!important;
+}
+.restored-hero-heading .series-main-title{
+  font-size:clamp(43px,5.35vw,76px)!important;
+  line-height:1.16!important;
+  letter-spacing:-.022em!important;
+  margin:0 0 13px!important;
+  overflow-wrap:normal!important;
+}
+.restored-hero-heading .series-main-japanese{
+  font-family:'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif!important;
+  font-size:clamp(29px,3.4vw,46px)!important;
+  line-height:1.45!important;
+  font-weight:400!important;
+  letter-spacing:.055em!important;
+  margin:0 0 15px!important;
+  color:#292522!important;
+}
+.restored-hero-heading .series-anniversary{
+  font-size:13px!important;
+  line-height:1.65!important;
+  letter-spacing:.055em!important;
+  color:#77716d!important;
+  margin:0 0 14px!important;
+}
+#about{padding-top:32px!important}
+#about .eyebrow{
+  font-size:11px!important;
+  letter-spacing:.18em!important;
+  color:#897f79!important;
+  margin-bottom:9px!important;
+}
+#about h2{
+  font-family:'Noto Serif JP','Yu Mincho','Hiragino Mincho ProN',serif!important;
+  font-size:clamp(28px,3.2vw,41px)!important;
+  font-weight:400!important;
+  line-height:1.45!important;
+  letter-spacing:.045em!important;
+  margin:0 0 26px!important;
+  color:#292522!important;
+}
+#about h2.en{
+  font-family:Didot,Georgia,serif!important;
+  letter-spacing:-.01em!important;
+}
+@media(max-width:760px){
+ .restored-hero-heading{padding-top:29px!important;padding-bottom:10px!important}
+ .restored-hero-heading .series-main-title{
+   font-size:clamp(37px,8.6vw,55px)!important;
+   line-height:1.16!important;
+   overflow-wrap:normal!important;
+ }
+ .restored-hero-heading .series-main-japanese{
+   font-size:clamp(27px,6.7vw,38px)!important;
+   letter-spacing:.025em!important;
+   line-height:1.5!important;
+ }
+ .restored-hero-heading .series-anniversary{font-size:12px!important;line-height:1.7!important}
+ #about{padding-top:27px!important}
+ #about h2{font-size:clamp(27px,6.7vw,36px)!important;margin-bottom:20px!important}
+}
+@media(max-width:360px){
+ .restored-hero-heading .series-main-title{font-size:35px!important}
+}
+</style><style>.katsula-info#contact{padding-top:24px!important;padding-bottom:24px!important;margin-top:22px!important;border-top:1px solid #eee}.katsula-info#contact h2{font-size:clamp(18px,2vw,23px)!important}.katsula-info#contact p{font-size:12px!important;line-height:1.8!important}.katsula-info#contact .eyebrow{font-size:10px!important}</style><style id="katsula-oxblood-20261012">header .site-nav>a{color:#642E32!important;text-decoration:none!important}header .site-nav>a:hover,header .site-nav>a:focus-visible{color:#492024!important}#contact h2.ja,#contact h2.en{font-size:12px!important;font-weight:500!important;letter-spacing:.075em!important;line-height:1.6!important;color:#642E32!important;margin:0 0 12px!important}#contact .eyebrow{font-size:10px!important;color:#642E32!important}</style><style id="artist-heading-visibility-fix">#biography .restored-bio-copy .artist-heading-visible{display:block!important;visibility:visible!important;opacity:1!important;color:#642E32!important;font-size:12px!important;font-weight:600!important;letter-spacing:.16em!important;line-height:1.6!important;margin:0 0 14px!important;text-transform:uppercase!important}</style><style id="artist-v2">#biography .artist-heading-visible{display:block!important;visibility:visible!important;opacity:1!important;color:#642E32!important;font-size:14px!important;font-weight:600!important;margin-bottom:16px!important}</style><style id="section-heading-spacing-v5">#acknowledgments h2.en + p.ja,#acknowledgments p.ja + p.en,#contact h2.en + p.ja,#contact p.ja + p.en{margin-top:1.5em!important}</style><style id="butterfly-size-v6">.koomin-butterfly-mark{width:26px!important;height:20px!important;flex-basis:26px!important}.art-copyright .koomin-butterfly-mark{width:22px!important;height:18px!important;flex-basis:22px!important}.hero-copyright .koomin-butterfly-mark{width:28px!important;height:21px!important;flex-basis:28px!important}.footer-butterflies{width:27px!important}</style><style id="artwork-edge-crop-v8">.art img[src*="07_KA-084-01O_web.jpg"],.detail-image img[src*="07_KA-084-01O_web.jpg"]{clip-path:inset(0 8% 0 8%)}.art img[src*="09_KA-006-01O_web.jpg"],.detail-image img[src*="09_KA-006-01O_web.jpg"]{clip-path:inset(0 8% 0 8%)}</style><style>#biography .restored-portrait{border:0!important;background:transparent!important;box-shadow:none!important}#biography .restored-portrait>img{clip-path:inset(3% 4%);transform:scale(1.08);border:0!important;box-shadow:none!important}</style><style id="next-exhibition-v11">.next-exhibition{text-align:center;padding-top:64px!important;padding-bottom:72px!important;border-top:1px solid #e8e1d9}.next-exhibition .eyebrow{color:#642e32;letter-spacing:.16em;margin-bottom:22px}.next-exhibition h2{font-weight:400;margin:12px 0 18px}.next-exhibition p{margin:8px 0}.next-exhibition .en{color:#777;font-size:.9em}</style></head><body><header><strong><img alt="KATSULA WORKS 桂舎" class="header-official-logo" src="katsula-official-logo.png"/></strong><nav class="site-nav"><a href="#top">EXHIBITIONS</a><a href="archive.html">ARCHIVE</a><a href="about.html">ABOUT</a><a href="#contact">CONTACT</a><div><button class="active" id="ja" onclick="setLang(false)">JP</button><button id="en" onclick="setLang(true)">EN</button></div></nav></header><main><section class="restored-hero" id="top"><figure class="restored-hero-art"><img alt="西片玖美子《蓮蜻蛉模様》" src="images/01_KB-004-01B_web.jpg"/><figcaption class="hero-copyright">© Koomin<img alt="" aria-hidden="true" class="koomin-butterfly-mark" src="koomin-butterflies.png"/></figcaption></figure><div class="restored-hero-heading"><div class="series-kicker">KUMIKO NISHIKATA · 1946–2021</div><h1 class="series-main-title">The Poetics of Pattern</h1><div class="series-main-japanese">西片玖美子　文様の詩学</div><div class="series-anniversary ja">西片玖美子 生誕80周年記念 · 2026年</div><div class="series-anniversary en">Commemorating the 80th anniversary of Kumiko Nishikata’s birth · 2026</div></div></section><section class="editorial" id="about"><div class="eyebrow">THE POETICS OF PATTERN</div><h2 class="ja">展示について</h2><h2 class="en">About the Exhibition</h2><div class="expandable-copy ja"><p class="ja">本展では、染色工芸家・西片玖美子（1946–2021）が遺した作品や型紙、図案、制作資料を整理しながら、その多彩な創作の世界を紹介していきます。</p><div class="expandable-more" id="about-ja-more"><p class="ja">西片玖美子の染色の原点には、芹沢銈介との出会いがありました。高校時代、日本民藝館でその作品に触れたことが、のちに大学で紅型を研究し、卒業後に沖縄へ渡って紅型を学ぶ契機となります。しかしその後の西片は、特定の様式や流派にとらわれることなく、独自の文様や柄を次々と生み出していきました。心惹かれる世界があれば、その源までさかのぼって学び、自分のかたちとして描き直す。古典的な文様から、身近な花や鳥、虫、風景、そして自由な幾何学模様まで、作品に登場するモチーフの幅広さは、そうした軽やかな興味の移ろいの軌跡でもあります。</p><p class="ja">西片玖美子の作品の多くには、見る人が思わず「かわいい」と感じる愛らしさがあります。そしてその目で、改めて西片の古典的な柄を眺めると、端正な文様のなかにも、同じ性質がにじんでいることに気づかされます。</p><p class="ja">桂舎が注目するのは、受け継がれてきた文様を大切にしながらも、それらを独自に組み合わせ、身のまわりのものに新しい形を見つけ、遊ぶように自由な表現へと展開していく、生き生きとした創造性です。西片玖美子にとって文様は、見つけて、遊ぶことのできる、至福の世界だったのかもしれません。</p><p class="ja">西片玖美子の生誕80周年にあたる2026年、桂舎と、作品・資料・目録を管理する「空眠（Koomin）」の共催により、オンライン企画展を開催し、あわせて年賀状や型紙などに焦点を当てた小さな特別展示も随時公開していきます。</p><p class="credit ja">主催：桂舎、空眠</p></div></div><div class="expandable-copy en"><p class="en">This exhibition explores the richly varied creative world of Kumiko Nishikata (1946–2021), a Japanese textile artist, through her works, stencils, original designs, and archival materials.</p><div class="expandable-more" id="about-en-more"><p class="en">Nishikata’s journey into textile dyeing began with an encounter with the work of Keisuke Serizawa. As a high school student, she came across his work at the Japan Folk Crafts Museum. This experience later inspired her to study bingata, the traditional Okinawan dyeing technique, at university and, after graduation, to travel to Okinawa to learn the craft firsthand.</p><p class="en">Over time, however, Nishikata developed a distinctive artistic language of her own, unconstrained by any particular style or school. Whenever something captured her imagination, she would explore its origins, study it closely, and reinterpret it in her own way. From classical patterns to familiar flowers, birds, insects, landscapes, and freely imagined geometric forms, the remarkable variety of motifs in her work reflects the ease and curiosity with which her interests moved from one subject to another.</p><p class="en">Many of Nishikata’s works possess an irresistible charm—a quality that might best be described by the Japanese word kawaii, or “cute.” Once we recognize this quality, we begin to see it even in her more classical designs, where a similar sense of playfulness and affection quietly emerges from within their elegant, carefully composed patterns.</p><p class="en">What particularly interests KATSULA WORKS is the lively creativity with which Nishikata embraced inherited patterns while freely combining them in unexpected ways, discovering new forms in the world around her, and transforming them into playful expressions of her own. For Nishikata, perhaps patterns were a world in themselves—a blissful world to explore, discover, and play within.</p><p class="en">In 2026, marking the 80th anniversary of Kumiko Nishikata’s birth, KATSULA WORKS and Koomin, which manages her works, archival materials, and catalogues, jointly present this exhibition.</p><p class="en">The online exhibition explores Nishikata’s work through four perspectives: Inheriting, Combining, Discovering, and Playing. Alongside the main exhibition, a series of smaller special presentations will be released periodically, highlighting such materials as her New Year’s greeting cards, stencils, and other aspects of her creative practice.</p><p class="credit en">Organized by: KATSULA WORKS and Koomin</p></div></div></section><section class="editorial" id="exhibition"><div class="eyebrow">EXHIBITION 01</div><h2 class="ja">はじめての出会い</h2><h2 class="en">First Encounters</h2><div class="expandable-copy ja"><p class="ja">「受け継ぐ」「組み合わせる」「見つける」「遊ぶ」——この四つの視点から選んだ作品には、西片玖美子ならではの文様の楽しさが表れています。</p><div class="expandable-more" id="exhibition-ja-more"><p class="ja">制作された時代も、モチーフも、表情もさまざまです。古典の文様を端正に描いたものもあれば、身近なものから思いがけない形を見つけ出し、自由に遊ぶように生まれた文様もあります。その一つひとつに共通するのは、西片らしい、どこか愛らしいまなざしです。</p><p class="ja">何を美しいと感じ、何に心を動かされ、そこからどんな形を見つけ出すのか。文様には、つくり手が世界を見つめる、その人ならではの感性が映し出されているのかもしれません。</p><p class="ja">ここから始まるシリーズを通して、西片玖美子の文様の世界を少しずつひもといていきます。</p></div></div><div class="expandable-copy en"><p class="en">The works have been chosen around four themes: Inheriting, Combining, Discovering, and Playing. Each reveals something distinctive about Nishikata’s approach to pattern-making.</p><div class="expandable-more" id="exhibition-en-more"><p class="en">Created at different times and inspired by a wide variety of subjects, these works are remarkably diverse in character. Some draw upon the refined elegance of classical patterns, while others transform familiar forms into unexpected, playful designs that bring a smile to the viewer’s face. Yet throughout them all, we find a certain tenderness and charm—a quality of kawaii, or endearing playfulness, that is unmistakably Nishikata’s own.</p><p class="en">What do we find beautiful? What catches our attention, stirs our imagination, and inspires us to discover new forms? Perhaps patterns reveal something of the unique way in which an artist sees and experiences the world.</p><p class="en">Through this series, we invite you to explore Nishikata’s world of patterns, one discovery at a time. We hope that among these twelve works, you will find a pattern that speaks to you.</p></div></div></section><div class="site-intro"><p class="ja">「Kumiko Nishikata — The Poetics of Pattern」の第1回となる本展では、西片玖美子の文様の世界を初めて訪れる方にも、その豊かさと魅力を感じていただけるよう、まずは12点の作品を選びました。心にとまる文様を見つけていただければ幸いです。</p><p class="en">For First Encounters, the opening exhibition in the series Kumiko Nishikata — The Poetics of Pattern, we have selected twelve works that offer an introduction to the richness and diversity of Nishikata’s creative world, especially for those encountering her patterns for the first time.</p></div><div class="grid"><article><div class="art"><img alt="蓮蜻蛉模様" draggable="false" loading="lazy" src="images/01_KB-004-01B_web.jpg"/><span class="art-copyright">© Koomin<img alt="" aria-hidden="true" class="koomin-butterfly-mark" src="koomin-butterflies.png"/></span></div><div class="num">01</div><div class="name ja">蓮蜻蛉模様</div><div class="name en">Lotus and Dragonfly Pattern</div><div class="id">KB-004-01</div></article><article><div class="art"><img alt="雀栗籠模様" draggable="false" loading="lazy" src="images/02_KB-005-02F_web.jpg"/><span class="art-copyright">© Koomin<img alt="" aria-hidden="true" class="koomin-butterfly-mark" src="koomin-butterflies.png"/></span></div><div class="num">02</div><div class="name ja">雀栗籠模様</div><div class="name en">Sparrow Chestnut Basket Pattern (size variant)</div><div class="id">KB-005-02</div></article><article><div class="art"><img alt="雨に傘模様" draggable="false" loading="lazy" src="images/03_KC-138-01K_web.jpg"/><span class="art-copyright">© Koomin<img alt="" aria-hidden="true" class="koomin-butterfly-mark" src="koomin-butterflies.png"/></span></div><div class="num">03</div><div class="name ja">雨に傘模様</div><div class="name en">Rain and Umbrella Pattern</div><div class="id">KC-138-01</div></article><article><div class="art"><img alt="枝垂れ桜リボン模様" draggable="false" loading="lazy" src="images/04_KC-007-01K_web.jpg"/><span class="art-copyright">© Koomin<img alt="" aria-hidden="true" class="koomin-butterfly-mark" src="koomin-butterflies.png"/></span></div><div class="num">04</div><div class="name ja">枝垂れ桜リボン模様</div><div class="name en">Weeping Cherry,  Ribbon Pattern</div><div class="id">KC-007-01</div></article><article><div class="art"><img alt="「賀春」リボン桜模様" draggable="false" loading="lazy" src="images/05_KC-066-01N_web.jpg"/><span class="art-copyright">© Koomin<img alt="" aria-hidden="true" class="koomin-butterfly-mark" src="koomin-butterflies.png"/></span></div><div class="num">05</div><div class="name ja">「賀春」リボン桜模様</div><div class="name en">"Gashun" Ribbon and Cherry Blossom Pattern</div><div class="id">KC-066-01</div></article><article><div class="art"><img alt="芥子模様" draggable="false" loading="lazy" src="images/06_KC-117-01K_web.jpg"/><span class="art-copyright">© Koomin<img alt="" aria-hidden="true" class="koomin-butterfly-mark" src="koomin-butterflies.png"/></span></div><div class="num">06</div><div class="name ja">芥子模様</div><div class="name en">Poppy Pattern</div><div class="id">KC-117-01</div></article><article><div class="art"><img alt="牡丹蝶模様" draggable="false" loading="lazy" src="images/07_KA-084-01O_web.jpg"/><span class="art-copyright">© Koomin<img alt="" aria-hidden="true" class="koomin-butterfly-mark" src="koomin-butterflies.png"/></span></div><div class="num">07</div><div class="name ja">牡丹蝶模様</div><div class="name en">Peony and Butterfly Pattern</div><div class="id">KA-084-01</div></article><article><div class="art"><img alt="唐花模様" draggable="false" loading="lazy" src="images/08_KC-118-01O_web.jpg"/><span class="art-copyright">© Koomin<img alt="" aria-hidden="true" class="koomin-butterfly-mark" src="koomin-butterflies.png"/></span></div><div class="num">08</div><div class="name ja">唐花模様</div><div class="name en">PoppyFlower (Karahana) and PomegranatePattern</div><div class="id">KC-118-01</div></article><article><div class="art"><img alt="白地松枝垂れ桜燕模様藍型" draggable="false" loading="lazy" src="images/09_KA-006-01O_web.jpg"/><span class="art-copyright">© Koomin<img alt="" aria-hidden="true" class="koomin-butterfly-mark" src="koomin-butterflies.png"/></span></div><div class="num">09</div><div class="name ja">白地松枝垂れ桜燕模様藍型</div><div class="name en">Pine Branch, Weeping Cherry and Swallow Pattern on White</div><div class="id">KA-006-01</div></article><article><div class="art"><img alt="燕河骨流水模様" draggable="false" loading="lazy" src="images/10_KA-108-01F_web.jpg"/><span class="art-copyright">© Koomin<img alt="" aria-hidden="true" class="koomin-butterfly-mark" src="koomin-butterflies.png"/></span></div><div class="num">10</div><div class="name ja">燕河骨流水模様</div><div class="name en">Swallow, Pond Lily and Flowing Water Pattern</div><div class="id">KA-108-01</div></article><article><div class="art"><img alt="小鳥、蝸牛、蛾、楽譜、雲模様" draggable="false" loading="lazy" src="images/11_KC-133-01K_web.jpg"/><span class="art-copyright">© Koomin<img alt="" aria-hidden="true" class="koomin-butterfly-mark" src="koomin-butterflies.png"/></span></div><div class="num">11</div><div class="name ja">小鳥、蝸牛、蛾、楽譜、雲模様</div><div class="name en">Birds, Snail, Moth, Musical Score and Clouds Pattern</div><div class="id">KC-133-01</div></article><article><div class="art"><img alt="芒模様" draggable="false" loading="lazy" src="images/12_KC-003-01K_web.jpg"/><span class="art-copyright">© Koomin<img alt="" aria-hidden="true" class="koomin-butterfly-mark" src="koomin-butterflies.png"/></span></div><div class="num">12</div><div class="name ja">芒模様</div><div class="name en">Pampas Grass Pattern</div><div class="id">KC-003-01</div></article></div><section class="editorial" id="biography"><div class="restored-bio-layout"><figure class="restored-portrait"><img alt="西片玖美子 肖像写真" src="profile-small.jpg"/><figcaption class="portrait-copyright">© Koomin<img alt="" aria-hidden="true" class="koomin-butterfly-mark" src="koomin-butterflies.png"/></figcaption></figure><div class="restored-bio-copy"><div class="eyebrow artist-heading-visible" aria-label="The Artist">THE ARTIST</div><h2 class="ja">西片玖美子</h2><h2 class="en">Kumiko Nishikata (1946–2021) — Biography</h2><p class="ja">西片玖美子（1946–2021）略歴
+1946年　東京都に生まれる。「板締め」から染色を始める
+桜蔭学園高等学校在学中、日本民藝館で芹沢銈介の作品に出会う
+早稲田大学第一文学部美術専修に進学。在学中、芹沢銈介に師事した村上元彦に型染を学ぶ
+1969年　卒業論文「琉球紅型文様に於ける日本染織の影響について」。卒業後、アメリカ統治下の沖縄へ渡り、首里の金城昌太郎の紅型工房で約1年間学ぶ
+その後、祝まなに学ぶ。また高田装束研究所の高田倭男のもとで装束を学び、皇室の十二単や能衣裳の制作・復元に携わる
+1974年　徳島県で藍染を研究。のちに自宅アトリエに藍甕を設える
+着物、帯、のれん、屏風、掛軸の制作から、本の装丁、グリーティングカード、簪、ネクタイなどのデザインまで、幅広く手がける</p><p class="en">1946
+Born in Tokyo. Began exploring textile dyeing through itajime, a traditional clamp-resist dyeing technique.</p><p class="en">While attending Oin Senior High School, encountered the work of Keisuke Serizawa at the Japan Folk Crafts Museum.</p><p class="en">Went on to study art at Waseda University’s School of Humanities and Social Sciences. During her university years, studied katazome (stencil dyeing) under Motohiko Murakami, a former student of Serizawa.</p><p class="en">1969
+Graduated with a thesis titled “The Influence of Japanese Textiles on Ryukyuan Bingata Patterns.”</p><p class="en">After graduation, traveled to Okinawa, then ruled under U.S. administration, and spent approximately one year studying bingata at the workshop of Shotaro Kinjo in Shuri.</p><p class="en">Later studied under Mana Iwai. She also studied traditional court costumes under Shizuo Takada at the Takada Institute of Costume Research, participating in the creation and restoration of jūnihitoe (twelve-layered ceremonial court robes) for the Imperial Family and Noh costumes.</p><p class="en">1974
+Studied indigo dyeing in Tokushima Prefecture. Later installed an indigo dye vat in her home studio.</p><p class="en">Her creative practice encompassed a remarkable range of works, from kimono, obi sashes, noren curtains, folding screens, and hanging scrolls to book covers, greeting cards, kanzashi hair ornaments, and neckties.</p></div></div></section><section class="editorial next-exhibition" aria-label="Next exhibition"><div class="eyebrow">NEXT EXHIBITION</div><p class="ja">西片玖美子 — 文様の詩学 第2回</p><h2 class="ja">およろこび</h2><p class="en">Kumiko Nishikata — The Poetics of Pattern, Exhibition 02</p><p class="en">Oyorokobi</p><p class="ja">2027年1月 開催予定</p><p class="en">Coming January 2027</p></section><section class="editorial" id="acknowledgments"><div class="eyebrow">ACKNOWLEDGMENTS</div><h2 class="en">Acknowledgments</h2><p class="ja">本プロジェクトの作品目録の作成にあたり、沖縄県立芸術大学芸術文化研究所共同研究員の平田美奈子氏に多大なるご協力をいただきました。また、目録の英語校閲では筧千夏氏にお力添えをいただきました。ここに記して、心より感謝申し上げます。</p><p class="en">We would like to express our sincere gratitude to Minako Hirata, Collaborative Researcher at the Research Institute of Arts and Culture, Okinawa Prefectural University of Arts, for her invaluable assistance in compiling the catalogue of works for this project.</p><p class="en">We are also deeply grateful to Chinatsu Kakehi for her careful review and editing of the English text of the catalogue.</p><p class="en">Their generous support and contributions are gratefully acknowledged.</p></section><section class="editorial katsula-info" id="contact"><div class="eyebrow">CONTACT</div><h2 class="en">Contact</h2><p class="ja">西片玖美子の作品・文様の商業利用、商品化、出版物への掲載、画像の使用等に関するお問い合わせは、桂舎（KATSULA WORKS）までご連絡ください。</p><p class="en">For inquiries about the commercial use, reproduction, product development, publication, or licensing of Kumiko Nishikata’s artworks and textile designs, please contact KATSULA WORKS.</p><p class="en">We also welcome inquiries about artwork purchases, online exhibitions, and digital content production.</p></section></main><footer>© Koomin / KATSULA WORKS. All rights reserved. <span class="ja">作品画像の無断転載・複製を禁じます。</span><span class="en">Unauthorized reproduction prohibited.</span><img alt="" aria-hidden="true" class="footer-butterflies" src="koomin-butterflies.png"/></footer><section aria-label="Artwork detail" aria-modal="true" class="detail" hidden="" id="detail" role="dialog"><div class="detail-top"><button class="detail-back" id="detailBack"><span class="ja">← 作品一覧へ戻る</span><span class="en">← Back to works</span></button><button aria-label="Close" class="detail-close" id="detailClose">×</button></div><div class="detail-inner"><div class="detail-media-column"><div class="detail-image"><img alt="" draggable="false" id="detailImage"/><span class="detail-copyright">© Koomin<img alt="" aria-hidden="true" class="koomin-butterfly-mark" src="koomin-butterflies.png"/></span></div><div class="detail-slide-controls" hidden="" id="detailSlideControls"><button aria-label="前の画像 / Previous image" id="slidePrev" type="button">‹</button><span aria-live="polite" id="slideCount">1 / 2</span><button aria-label="次の画像 / Next image" id="slideNext" type="button">›</button></div></div><div class="detail-info"><div class="detail-kicker">KUMIKO NISHIKATA · <span id="detailNumber"></span> / 12</div><h2><span class="ja" id="detailNameJa"></span><span class="en" id="detailNameEn"></span></h2><div class="detail-id" id="detailId"></div><div class="detail-rule"></div><div class="detail-description"><div class="catalogue-info ja"><h3>作品目録情報</h3><dl id="catalogue-ja"></dl></div><div class="catalogue-info en"><h3>Catalogue information</h3><dl id="catalogue-en"></dl></div><p class="catalogue-note ja">作品目録に記載された情報を掲載しています。作品解説本文は確認後に追加します。</p><p class="catalogue-note en">Details are drawn from the artwork catalogue. Interpretive commentary will be added after review.</p></div><div class="detail-nav"><button id="detailPrev"><span class="ja">← 前の作品</span><span class="en">← Previous</span></button><button id="detailNext"><span class="ja">次の作品 →</span><span class="en">Next →</span></button></div></div></div></section><script>function setLang(en){document.body.classList.toggle("english",en);document.documentElement.lang=en?"en":"ja";document.getElementById("ja").classList.toggle("active",!en);document.getElementById("en").classList.toggle("active",en)}document.addEventListener("contextmenu",e=>{if(e.target.closest(".art"))e.preventDefault()});
+const works=Array.from(document.querySelectorAll('.grid article'));
+const detail=document.getElementById('detail');let current=-1;let lastFocus=null;
+function openWork(i){if(i<0||i>=works.length)return;const w=works[i];current=i;lastFocus=lastFocus||document.activeElement;const img=w.querySelector('img');const detailImg=document.getElementById('detailImage');detailImg.src=img.getAttribute('src');detailImg.alt=img.alt;document.getElementById('detailNumber').textContent=String(i+1).padStart(2,'0');document.getElementById('detailNameJa').textContent=w.querySelector('.name.ja').textContent.trim();document.getElementById('detailNameEn').textContent=w.querySelector('.name.en').textContent.trim()||w.querySelector('.name.ja').textContent.trim();document.getElementById('detailId').textContent=w.querySelector('.id').textContent.trim();document.getElementById('detailPrev').disabled=i===0;document.getElementById('detailNext').disabled=i===works.length-1;detail.hidden=false;document.body.style.overflow='hidden';detail.scrollTop=0;document.getElementById('detailBack').focus();history.replaceState(null,'','#work-'+String(i+1).padStart(2,'0'));}
+function closeWork(){detail.hidden=true;document.body.style.overflow='';history.replaceState(null,'',location.pathname+location.search);if(lastFocus)lastFocus.focus();lastFocus=null;current=-1;}
+works.forEach((w,i)=>{w.setAttribute('tabindex','0');w.setAttribute('role','button');w.setAttribute('aria-label',w.querySelector('.name.ja').textContent.trim()+' の詳細');w.addEventListener('click',()=>openWork(i));w.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openWork(i)}})});
+document.getElementById('detailBack').addEventListener('click',closeWork);document.getElementById('detailClose').addEventListener('click',closeWork);document.getElementById('detailPrev').addEventListener('click',()=>openWork(current-1));document.getElementById('detailNext').addEventListener('click',()=>openWork(current+1));document.addEventListener('keydown',e=>{if(detail.hidden)return;if(e.key==='Escape')closeWork();else if(e.key==='ArrowLeft')openWork(current-1);else if(e.key==='ArrowRight')openWork(current+1)});
+if(/^#work-\d{2}$/.test(location.hash)){let i=Number(location.hash.slice(6))-1;if(i>=0&&i<works.length)openWork(i)}
+</script><script>
+const catalogueData={"KB-004-01":{"ja":{"form":"屏風","technique":"一枚型","dimensions":"110 × 110 cm"},"en":{"form":"Katazome Paper / Dyed Cloth","technique":"Single Stencil","dimensions":"110 × 110 cm"}},"KB-005-02":{"ja":{"form":"型紙\n染布","technique":"一枚型"},"en":{"form":"Katazome Paper","technique":"Single Stencil"}},"KC-138-01":{"ja":{"form":"染布","technique":"一枚型・刷込み（傘）、絞染め"},"en":{"form":"Dyed Fabric","technique":"Single stencil / Shibori dyeing"}},"KC-007-01":{"ja":{"form":"型紙","technique":"一枚型"},"en":{"form":"Katazome Paper","technique":"Single Stencil"}},"KC-066-01":{"ja":{"form":"和紙染め","technique":"一枚型・白地型"},"en":{"form":"Washi Dyeing","technique":"Single-layer stencil / Bingata"}},"KC-117-01":{"ja":{"form":"型紙・染布","technique":"一枚型"},"en":{"form":"Stencil (Katagami) / Dyed Fabric","technique":"Single stencil"}},"KA-084-01":{"ja":{"form":"型紙・衣裳（帯）","technique":"一枚型"},"en":{"form":"Stencil (Katagami) / Costume (Obi)","technique":"Single stencil"}},"KC-118-01":{"ja":{"form":"型紙・衣裳（帯）・染布","technique":"一枚型"},"en":{"form":"Stencil (Katagami) / Costume (Obi) / Dyed Fabric","technique":"Single stencil"}},"KA-006-01":{"ja":{"form":"型紙・衣装（帯）","technique":"一枚型"},"en":{"form":"Katazome Paper / Obi (Sash)","technique":"Single Stencil"}},"KA-108-01":{"ja":{"form":"型紙・染布","technique":"一枚型"},"en":{"form":"Stencil (Katagami) / Dyed Fabric","technique":"Single stencil"}},"KC-133-01":{"ja":{"form":"型紙・染布","technique":"重ね型・摺込み型"},"en":{"form":"Stencil (Katagami) / Dyed Fabric","technique":"Layered stencil / Print-in stencil"}},"KC-003-01":{"ja":{"form":"型紙","technique":"重ね型・摺込み型"},"en":{"form":"Katagami","technique":"Layered Stencil / Rubbing Stencil"}}};
+const catalogueLabels={ja:{category:'分類',form:'形態',technique:'技法',dimensions:'寸法'},en:{category:'Category',form:'Form',technique:'Technique',dimensions:'Dimensions'}};
+function renderCatalogue(id){
+  for(const lang of ['ja','en']){
+    const dl=document.getElementById('catalogue-'+lang);dl.replaceChildren();
+    const item=(catalogueData[id]||{})[lang]||{};
+    for(const key of ['form','technique','dimensions']){
+      if(!item[key])continue;
+      const dt=document.createElement('dt'),dd=document.createElement('dd');
+      dt.textContent=catalogueLabels[lang][key];dd.textContent=item[key];
+      dl.append(dt,dd);
+    }
+    if(!dl.children.length){
+      const dd=document.createElement('dd');dd.textContent=lang==='ja'?'目録番号をご参照ください。':'See catalogue number.';dl.append(dd);
+    }
+  }
+}
+const originalOpenWork=openWork;
+openWork=function(i){originalOpenWork(i);if(i>=0&&i<works.length)renderCatalogue(works[i].querySelector('.id').textContent.trim());};
+</script><script>
+// Show all photos for a work as a simple, accessible slideshow in its detail view.
+const stencilPhotos = {"KB-005-02":"images/stencil_02.jpg","KC-117-01":"images/stencil_06.jpg","KA-084-01":"images/stencil_07.jpg","KC-118-01":"images/stencil_08.jpg","KA-006-01":"images/stencil_09.jpg","KC-133-01":"images/stencil_11.jpg"};
+let slideImages=[], slideIndex=0;
+function renderWorkSlide(){
+ const image=document.getElementById('detailImage');
+ if(!image||!slideImages.length)return;
+ image.src=slideImages[slideIndex].src;
+ image.alt=slideImages[slideIndex].alt;
+ const count=document.getElementById('slideCount');
+ count.textContent=(slideIndex+1)+' / '+slideImages.length;
+ document.getElementById('slidePrev').disabled=slideIndex===0;
+ document.getElementById('slideNext').disabled=slideIndex===slideImages.length-1;
+}
+const originalOpenWorkSlides=openWork;
+openWork=function(i){
+ originalOpenWorkSlides(i);
+ if(i<0||i>=works.length)return;
+ const card=works[i], image=card.querySelector('img');
+ const id=card.querySelector('.id').textContent.trim();
+ slideImages=[{src:image.getAttribute('src'),alt:image.alt}];
+ if(stencilPhotos[id])slideImages.push({src:stencilPhotos[id],alt:'型紙写真 / Stencil photograph'});
+ slideIndex=0;
+ document.getElementById('detailSlideControls').hidden=slideImages.length<2;
+ renderWorkSlide();
+};
+document.getElementById('slidePrev').addEventListener('click',function(){if(slideIndex>0){slideIndex--;renderWorkSlide()}});
+document.getElementById('slideNext').addEventListener('click',function(){if(slideIndex<slideImages.length-1){slideIndex++;renderWorkSlide()}});
+</script><style id="mobile-readmore-and-image-protection">.grid img,.detail-image img,.restored-hero-art img{-webkit-user-select:none;user-select:none;-webkit-user-drag:none} .mobile-readmore[hidden]{display:none!important}</style><script id="mobile-editorial-readmore">
+(function(){
+ const mobile=window.matchMedia('(max-width:760px)');
+ for(const id of ['about','exhibition']){
+  const section=document.getElementById(id);if(!section)continue;
+  section.querySelectorAll('.expandable-copy').forEach(copy=>{
+   const more=copy.querySelector('.expandable-more');if(!more)return;
+   if((id==='exhibition'||id==='about') && more.firstElementChild)copy.insertBefore(more.firstElementChild,more);
+   const btn=document.createElement('button');btn.type='button';btn.className='expandable-toggle mobile-readmore';btn.setAttribute('aria-expanded','false');more.after(btn);
+   let expanded=false;const en=copy.classList.contains('en');
+   function sync(){const collapsed=mobile.matches&&!expanded;more.hidden=collapsed;btn.hidden=!mobile.matches;btn.setAttribute('aria-expanded',String(!collapsed));btn.textContent=en?(collapsed?'Read more':'Close'):(collapsed?'続きを読む':'閉じる')}
+   btn.addEventListener('click',()=>{expanded=!expanded;sync()});mobile.addEventListener('change',sync);sync();
+  });
+ }
+ document.querySelectorAll('.grid img,.detail-image img,.restored-hero-art img').forEach(img=>{img.draggable=false;img.addEventListener('dragstart',e=>e.preventDefault());img.addEventListener('contextmenu',e=>e.preventDefault())});
+})();
+</script></body></html>

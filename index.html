@@ -305,7 +305,7 @@ document.getElementById('slideNext').addEventListener('click',function(){if(slid
   const section=document.getElementById(id);if(!section)continue;
   section.querySelectorAll('.expandable-copy').forEach(copy=>{
    const more=copy.querySelector('.expandable-more');if(!more)return;
-   if(id==='exhibition' && more.firstElementChild)copy.insertBefore(more.firstElementChild,more);
+   if((id==='exhibition'||id==='about') && more.firstElementChild)copy.insertBefore(more.firstElementChild,more);
    const btn=document.createElement('button');btn.type='button';btn.className='expandable-toggle mobile-readmore';btn.setAttribute('aria-expanded','false');more.after(btn);
    let expanded=false;const en=copy.classList.contains('en');
    function sync(){const collapsed=mobile.matches&&!expanded;more.hidden=collapsed;btn.hidden=!mobile.matches;btn.setAttribute('aria-expanded',String(!collapsed));btn.textContent=en?(collapsed?'Read more':'Close'):(collapsed?'続きを読む':'閉じる')}

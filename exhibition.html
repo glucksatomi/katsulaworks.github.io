@@ -397,28 +397,32 @@ document.getElementById('slideNext').addEventListener('click',function(){if(slid
  }
  document.querySelectorAll('.grid img,.detail-image img,.restored-hero-art img').forEach(img=>{img.draggable=false;img.addEventListener('dragstart',e=>e.preventDefault());img.addEventListener('contextmenu',e=>e.preventDefault())});
 })();
-</script><script id="artwork-side-repair">
+</script><script id="artwork-side-repair-v2">
+/* Retouch embedded black side strips in list thumbnails only, at original size. */
 (function(){
-for(const name of ['07_KA-084-01O_web.jpg','09_KA-006-01O_web.jpg']){
-const img=document.querySelector('.grid .art img[src$="'+name+'"]');if(!img)continue;
-const original=img.getAttribute('src');
-function fix(){
-if(!img.naturalWidth)return;
-try{
-const c=document.createElement('canvas');c.width=img.naturalWidth;c.height=img.naturalHeight;
-const x=c.getContext('2d',{willReadFrequently:true});x.drawImage(img,0,0);
-const pic=x.getImageData(0,0,c.width,c.height),d=pic.data,w=c.width,H=c.height,max=Math.floor(w*.18);
-for(let y=0;y<H;y++)for(const left of [true,false]){
-let n=0;
-while(n<max){const xx=left?n:w-1-n,p=(y*w+xx)*4;if(d[p]>=90||d[p+1]>=90||d[p+2]>=90)break;n++}
-if(n<2)continue;
-const sx=left?Math.min(w-1,n+3):Math.max(0,w-n-4),sp=(y*w+sx)*4;
-for(let a=0;a<n;a++){const xx=left?a:w-1-a,p=(y*w+xx)*4;d[p]=d[sp];d[p+1]=d[sp+1];d[p+2]=d[sp+2]}
-}
-x.putImageData(pic,0,0);img.dataset.originalSrc=original;img.src=c.toDataURL('image/jpeg',.94);
-}catch(e){}
-}
-if(img.complete)fix();else img.addEventListener('load',fix,{once:true});
+const targets=[
+ {file:'07_KA-084-01O_web.jpg',left:.082,right:.085},
+ {file:'09_KA-006-01O_web.jpg',left:.082,right:.085}
+];
+for(const target of targets){
+ const img=document.querySelector('.grid article .artwork-display .art img[src$="'+target.file+'"]');
+ if(!img)continue;
+ const original=img.getAttribute('src');
+ const source=new Image();
+ source.onload=function(){
+  try{
+   const w=source.naturalWidth,h=source.naturalHeight;
+   const canvas=document.createElement('canvas');canvas.width=w;canvas.height=h;
+   const ctx=canvas.getContext('2d');ctx.drawImage(source,0,0);
+   const l=Math.ceil(w*target.left),r=Math.ceil(w*target.right);
+   /* Fill strips with the nearest interior pixels, one row at a time. */
+   ctx.drawImage(canvas,l,0,1,h,0,0,l,h);
+   ctx.drawImage(canvas,w-r-1,0,1,h,w-r,0,r,h);
+   img.dataset.originalSrc=original;
+   img.src=canvas.toDataURL('image/jpeg',.95);
+  }catch(e){console.warn('Thumbnail edge correction unavailable',e)}
+ };
+ source.src=original;
 }
 })();
 </script></body></html>

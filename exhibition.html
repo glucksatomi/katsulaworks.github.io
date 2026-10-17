@@ -420,12 +420,12 @@ for(const file of ['07_KA-084-01O_web.jpg','09_KA-006-01O_web.jpg']){
     return Math.min(Math.floor(w*.16),Math.max(0,counts[2]+Math.round(w*.004)));
    };
    const l=edgeWidth(true),r=edgeWidth(false);
-   ctx.fillStyle=getComputedStyle(img.closest('.art')).backgroundColor || '#f8f7f5';
-   if(l>0)ctx.fillRect(0,0,l,h);
-   if(r>0)ctx.fillRect(w-r,0,r,h);
+   // Transparent margins reveal the exact underlying gallery background.
+   if(l>0)ctx.clearRect(0,0,l,h);
+   if(r>0)ctx.clearRect(w-r,0,r,h);
    img.dataset.originalSrc=original;
-   img.src=c.toDataURL('image/jpeg',.97);
-  }catch(e){console.warn('Unable to whiten artwork side margins',e)}
+   img.src=c.toDataURL('image/png');
+  }catch(e){console.warn('Unable to clear artwork side margins',e)}
  };
  source.src=original;
 }

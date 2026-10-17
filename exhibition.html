@@ -397,30 +397,35 @@ document.getElementById('slideNext').addEventListener('click',function(){if(slid
  }
  document.querySelectorAll('.grid img,.detail-image img,.restored-hero-art img').forEach(img=>{img.draggable=false;img.addEventListener('dragstart',e=>e.preventDefault());img.addEventListener('contextmenu',e=>e.preventDefault())});
 })();
-</script><script id="artwork-side-repair-v2">
-/* Retouch embedded black side strips in list thumbnails only, at original size. */
+</script><script id="artwork-white-side-margins">
+/* Artwork 07 and 09: replace dark side strips with flat white, no scaling.
+   This affects only list images; details continue to use the untouched originals. */
 (function(){
-const targets=[
- {file:'07_KA-084-01O_web.jpg',left:.082,right:.085},
- {file:'09_KA-006-01O_web.jpg',left:.082,right:.085}
-];
-for(const target of targets){
- const img=document.querySelector('.grid article .artwork-display .art img[src$="'+target.file+'"]');
+for(const file of ['07_KA-084-01O_web.jpg','09_KA-006-01O_web.jpg']){
+ const img=document.querySelector('.grid article .artwork-display .art img[src$="'+file+'"]');
  if(!img)continue;
  const original=img.getAttribute('src');
  const source=new Image();
  source.onload=function(){
   try{
    const w=source.naturalWidth,h=source.naturalHeight;
-   const canvas=document.createElement('canvas');canvas.width=w;canvas.height=h;
-   const ctx=canvas.getContext('2d');ctx.drawImage(source,0,0);
-   const l=Math.ceil(w*target.left),r=Math.ceil(w*target.right);
-   /* Fill strips with the nearest interior pixels, one row at a time. */
-   ctx.drawImage(canvas,l,0,1,h,0,0,l,h);
-   ctx.drawImage(canvas,w-r-1,0,1,h,w-r,0,r,h);
+   const c=document.createElement('canvas');c.width=w;c.height=h;
+   const ctx=c.getContext('2d');ctx.drawImage(source,0,0);
+   const sample=ctx.getImageData(0,0,w,h).data;
+   const isDark=(x,y)=>{const p=(y*w+x)*4;return sample[p]<105&&sample[p+1]<105&&sample[p+2]<105};
+   const ys=[.15,.35,.55,.75,.9].map(y=>Math.floor(y*(h-1)));
+   const edgeWidth=(left)=>{
+    const counts=ys.map(y=>{let n=0;while(n<Math.floor(w*.16)&&isDark(left?n:w-1-n,y))n++;return n});
+    counts.sort((a,b)=>a-b);
+    return Math.min(Math.floor(w*.16),Math.max(0,counts[2]+Math.round(w*.004)));
+   };
+   const l=edgeWidth(true),r=edgeWidth(false);
+   ctx.fillStyle='#ffffff';
+   if(l>0)ctx.fillRect(0,0,l,h);
+   if(r>0)ctx.fillRect(w-r,0,r,h);
    img.dataset.originalSrc=original;
-   img.src=canvas.toDataURL('image/jpeg',.95);
-  }catch(e){console.warn('Thumbnail edge correction unavailable',e)}
+   img.src=c.toDataURL('image/jpeg',.97);
+  }catch(e){console.warn('Unable to whiten artwork side margins',e)}
  };
  source.src=original;
 }
